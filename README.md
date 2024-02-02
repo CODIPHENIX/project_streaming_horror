@@ -1,1 +1,1 @@
-https://www.figma.com/proto/YM5X9u2ZME2ARRUKUFcRtS/chart-chraphic-site-web-streaming-thriller?type=design&node-id=3-2&t=0dTGpwPduFWXSCjj-1&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=3%3A2&mode=design
+https://codiphenix.github.io/project_streaming_horror/
