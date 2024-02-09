@@ -3,12 +3,19 @@
     --primary-color:#33CC33;
     --secondary-color:#1A1A1A;
     --cmpl-color:#fff;
+    font-size: 10px;
+
+    
 }
 body{
     font-family: Lexend Deca;
+    font-size: clamp(0.5rem, 1vw + 1rem, 5rem );
+    background-color: var(--secondary-color);
     font-weight: 700;
-    display: grid;
-    height: 100vh;
+    position: relative;
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
     /* grid-template-rows: auto auto auto auto; */
 
 }
@@ -188,6 +195,9 @@ input[type=submit] {
   .valider:hover{
     opacity: 0.8;
   }
+  main{
+    flex: 1;
+  }
 
 
   .p-1{
@@ -205,6 +215,12 @@ input[type=submit] {
   footer{
     text-align: center;
     color: var(--cmpl-color);
+    position: relative;;
+    height: 10%;
+    bottom: 0;
+    width: 100%;
+    
+    
   } 
   .flex-container{
     /* border: 2px solid red;  */
