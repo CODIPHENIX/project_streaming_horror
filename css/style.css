@@ -3,14 +3,13 @@
     --primary-color:#33CC33;
     --secondary-color:#1A1A1A;
     --cmpl-color:#fff;
-    font-size: 10px;
+    /* font-size: 10px; */
 
     
 }
 body{
     font-family: Lexend Deca;
-    font-size: clamp(0.5rem, 1vw + 1rem, 5rem );
-    background-color: var(--secondary-color);
+      background-color: var(--secondary-color);
     font-weight: 700;
     position: relative;
     min-height: 100vh;
