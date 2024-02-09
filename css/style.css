@@ -214,8 +214,7 @@ input[type=submit] {
   footer{
     text-align: center;
     color: var(--cmpl-color);
-    position: relative;;
-    height: 10%;
+    position: relative;
     bottom: 0;
     width: 100%;
     
@@ -265,9 +264,7 @@ input[type=submit] {
     color: var(--cmpl-color);
   }
   @media screen and (max-width:700px){
-    body{
-      font-size: 1rem;
-    }
+  
     .container{
       width: 98%;
   }
