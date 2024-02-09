@@ -7,6 +7,9 @@
 body{
     font-family: Lexend Deca;
     font-weight: 700;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
 
 }
 section,footer,main{
@@ -302,12 +305,12 @@ input[type=search] {
       border-radius: 0.6rem;
       overflow: hidden;
     }
-    .info_img{
+   /*  .info_img{
       flex: 1;
       min-width:;
       }
-      
-  }
-
+       */
+  
+    }
  
 
