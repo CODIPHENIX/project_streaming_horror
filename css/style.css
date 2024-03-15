@@ -3,9 +3,12 @@
     --primary-color:#33CC33;
     --secondary-color:#1A1A1A;
     --cmpl-color:#fff;
+    --btn-color:#fff;
     /* font-size: 10px; */
-
-    
+}
+.dark-theme{
+  --secondary-color:#E6EFE9;
+  --cmpl-color:#1A1A1A;
 }
 body{
     font-family: "Lexend Deca";
@@ -18,6 +21,12 @@ body{
     /* grid-template-rows: auto auto auto auto; */
 
 }
+.flex{
+  display: flex;
+  justify-content: center; 
+}
+
+
 section,footer,main{
     background-color: var(--secondary-color);
 }
@@ -35,8 +44,12 @@ header{
     width: 100%;
 
 }
+
+
+
 nav a{
     margin-left: 2rem;
+    align-self: center;
     color: var(--cmpl-color);
     font-weight: 700;
     transition: 100ms;
@@ -65,11 +78,11 @@ nav a:hover {
     text-align: center;
     color: var(--primary-color);
 } 
-.flex{
-    display: flex;
-    justify-content: center;
-    
-    
+.toggle_btn{
+  margin-left: auto;
+  height: 5rem;
+  width: 5rem;
+  cursor: pointer;
 }
 
 .display img{
@@ -172,7 +185,7 @@ input[type=search] {
   }
 input[type=submit] {
     background-color: var(--primary-color);
-    color: var(--cmpl-color);
+    color: var(--btn-color);
     transition: 100ms;
   }
   input[type=submit]:hover {
@@ -184,7 +197,7 @@ input[type=submit] {
     border-radius: 0.6rem;
     padding: 1rem 1.2rem;
     background-color: var(--primary-color);
-    color: var(--cmpl-color);
+    color: var(--btn-color);
     transition: 100ms;
   }
   .sc{
@@ -197,8 +210,6 @@ input[type=submit] {
   main{
     flex: 1;
   }
-
-
   .p-1{
     border: 2px solid var(--primary-color);
     margin-bottom: 1rem;
@@ -253,7 +264,7 @@ input[type=submit] {
   ul li:nth-child(3){
     padding: 1rem;  
     border-radius: 0.8rem;
-    color: var(--cmpl-color);
+    color: var(--btn-color);
     background-color: var(--primary-color);
     transition: 100ms;
   }
@@ -298,6 +309,11 @@ input[type=search] {
   @media screen and (max-width:414px){
     body{
       font-size: 0.8rem;
+    }
+    .toggle_btn{
+      height: 3rem;
+      width: 3rem;
+  
     }
     .grid-container{
       display: flex;
