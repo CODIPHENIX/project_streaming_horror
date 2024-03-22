@@ -1,40 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <!-- favicon end -->
-
-    <!-- css  -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <title>HorreurVision</title>
-</head>
-<body>
-    
-    <header>
-        <div class="container">
-            
-            <nav class="flex">
-                <a href="index.html" class="active">Accueil</a>
-                <a href="nos_film.html">Nos films</a>
-                <a href="S’inscrire.html">S’inscrire</a>
-                <a href="Se_connecter.html">Se connecter</a>
-
-                <span class="toggle_btn" id="btn_t" aria-hidden="true" >
-                    <img src="asset/moon.png" id="btnicon" alt="wtf">
-                </span>
-            </nav>
-        </div>
-            
-    </header>
-
+<?php
+require_once "includes/header.php";
+?>
     <section class="logo-sec">
         <div class="container flex">
             <div class="logo display">
@@ -81,16 +48,6 @@
 
     </main>
 
-    <footer>
-        <div class="container">
-            <div>
-                <p>&copy;- Movie-Streaming -2024</p>
-            </div>
-        </div>
-
-    </footer>
-
-    <script type="module" src="js/app.js"></script>
-
-</body>
-</html>
+<?php
+require_once "includes/footer.php";
+?>

@@ -1,40 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!-- favicon end -->
-
-    <!-- css  -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <title>HorreurVision</title>
-</head>
-<body>
-    
-    <header>
-        <div class="container">
-            
-            <nav class="flex">
-                <a href="index.html" >Accueil</a>
-                <a href="nos_film.html" >Nos films</a>
-                <a href="S’inscrire.html" class="active">S’inscrire</a>
-                <a href="Se_connecter.html">Se connecter</a>
-
-                <span class="toggle_btn" id="btn_t">
-                    <img src="asset/moon.png" id="btnicon" alt="">
-                </span>
-            </nav>
-        </div>
-            
-    </header>
-
+<?php
+    require_once "includes/header.php";
+?>
     <section class="logo-sec">
         <div class="container flex">
             <div class="logo_1 display">
@@ -66,13 +32,17 @@
                 <div class="text-center">
                     <h1>Inscription rapide</h1>
                 </div>
+                <div id="error"></div>
                 <form action="php/recup_signin.php" method="post" class="login">
                     <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom" placeholder="Nom">
+                    <input type="text" name="nom" id="nom" placeholder="Nom"
+                    value="<?php echo isset($_SESSION['nom']) ? htmlspecialchars($_SESSION['nom']) : ''; ?>">
                     <label for="prenom">Prénom</label>
-                    <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+                    <input type="text" name="prenom" id="prenom" placeholder="Prénom"
+                    value="<?php echo isset($_SESSION['prenom']) ? htmlspecialchars($_SESSION['prenom']) : ''; ?>">
                     <label for="pwd">Mot de passe</label>
-                    <input type="password" name="pwd" id="pwd" placeholder="mot de passe">
+                    <input type="password" name="pwd" id="pwd" placeholder="mot de passe"
+                    value="<?php echo isset($_SESSION['nom']) ? htmlspecialchars($_SESSION['nom']) : ''; ?>">
                     <label for="c_pwd">Confirmer mot de passe</label>
                     <input type="password" name="c_pwd" id="c_pwd" placeholder="Confirmer mot de passe">
                     <label for="mail">E-mail</label>
@@ -101,16 +71,6 @@
 
     </main>
 
-    <footer>
-        <div class="container">
-            <div>
-                <p>&copy;- Movie-Streaming -2024</p>
-            </div>
-        </div>
-
-    </footer>
-
-    <script type="module" src="js/app.js"></script>
-
-</body>
-</html>
+<?php
+    require_once "includes/footer.php";
+?>
